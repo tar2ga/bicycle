@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const fileinclude = require('gulp-file-include');
 
 gulp.task('server', function() {
 
@@ -38,7 +39,8 @@ gulp.task('watch', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src("src/*.html")
+    return gulp.src(["src/*.html", "!src/_*.html"])
+        .pipe(fileinclude())
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist/"));
 });
