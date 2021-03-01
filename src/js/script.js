@@ -8,9 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		console.log('clicked');
 		//console.log(this);
 		//console.log(hamburger);
-		//document.querySelector('.icon-menu').classList.toogle('active');
-		document.querySelector('.menu__body').classList.toogle('active');
-		document.querySelector('.body').classList.toogle('lock');
+		document.querySelector('.icon-menu').classList.toggle('active');
+		document.querySelector('.menu__body').classList.toggle('active');
+		//document.querySelector('.body').classList.toggle('lock');
 	})
 
 	function ibg() {
