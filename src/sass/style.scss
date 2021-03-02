@@ -14,12 +14,16 @@ body {
 
 .container {
 	max-width: 1130px;
-	padding: 0 15px
+	padding: 0 15px;
+	margin: 0 auto;
 }
 
 @import 'blocks/ui';
 @import 'blocks/header';
-//@import 'blocks/footer';
+@import 'blocks/footer';
+
 @import 'blocks/page';
+@import 'blocks/generation';
+@import 'blocks/brands';
 
 @import 'base/media'
