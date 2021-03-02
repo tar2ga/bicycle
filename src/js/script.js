@@ -1,17 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('.wrapper').classList.add('loaded');
-	//console.log(document.querySelector('.wrapper'));
 
 	const hamburger = document.querySelector('.icon-menu');
-	//console.log(hamburger);
-	hamburger.addEventListener('click', () => {
-		console.log('clicked');
-		//console.log(this);
-		//console.log(hamburger);
-		document.querySelector('.icon-menu').classList.toggle('active');
+	hamburger.onclick = () => {
+		hamburger.classList.toggle('active');
 		document.querySelector('.menu__body').classList.toggle('active');
-		//document.querySelector('.body').classList.toggle('lock');
-	})
+		document.querySelector('body').classList.toggle('lock');
+	}
 
 	function ibg() {
 		let ibg = document.querySelectorAll(".ibg");
@@ -24,5 +19,4 @@ window.addEventListener('DOMContentLoaded', () => {
 	}
 
 	ibg();
-
-});
+})
