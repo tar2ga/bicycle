@@ -1,5 +1,31 @@
 .brands {
 
+	&__reverse {
+		.brands__column {
+			order: 1;
+			&_b {
+				flex: 0 1 66.667%;
+				order: 2;
+			}
+		}
+	}
+
+	&_last {
+		@media (max-width: 1100px) {
+			.brands__column {
+				&:nth-child(1){
+					order: 2;
+				}
+				&:nth-child(2){
+					order: 1;
+				}
+				&:nth-child(3){
+					order: 3;
+				}
+			}
+		}
+	}
+
 	&__row {
 		display: flex;
 		@media (max-width: 1100px) {
@@ -39,7 +65,7 @@
 	}
 
 	&__image {
-		padding-bottom: 37.51%;
+		padding-bottom: 37.502%;
 	}
 
 }
