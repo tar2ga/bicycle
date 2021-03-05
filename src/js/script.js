@@ -19,4 +19,15 @@ window.addEventListener('DOMContentLoaded', () => {
 	}
 
 	ibg();
+
+	if($('.slider__body').length>0){
+		$('.slider__body').slick({
+			arrows:false, //показывать стрелочки
+			dots:true, //показывать точки
+			accessibility:false,
+			slidesToShow: 1,//сколько отображать слайдов
+			autoPlaySpeed:3000,//скорость автоматического проигрования слайдов. по умолчанию 3000 мс
+			adaptiveHeight:true,
+		})
+	}
 })

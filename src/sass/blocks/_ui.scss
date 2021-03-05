@@ -14,3 +14,36 @@
 	opacity: 0;
 	visibility: hidden;
 }
+
+.slick-slider{
+	position: relative;
+	.slick-list{
+		overflow: hidden;
+	}
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+	}
+	.slick-dots{
+		padding-top: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			margin: 0 5px;
+			button {
+				font-size: 0;
+				width: 11px;
+				height: 11px;
+				background-color: rgba(40,47,53,0.0);
+				border: 1px solid #c8c8c8;
+				border-radius: 50%;
+			}
+			&.slick-active {
+				button{
+					background-color: #a9afb3;
+				}
+			}
+		}
+	}
+}
